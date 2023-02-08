@@ -7,7 +7,7 @@ var logger = require('morgan');
 const multer = require('multer');
 const fs = require('fs');
 
-const uploadPath = "/mnt/efs";
+const uploadPath = "/mnt/efs/";
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
