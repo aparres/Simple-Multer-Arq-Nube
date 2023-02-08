@@ -7,7 +7,7 @@ var logger = require('morgan');
 const multer = require('multer');
 const fs = require('fs');
 
-const uploadPath = "C:/Users/parres/Proyectos/Simple Multer Arq Nube/uploads/";
+const uploadPath = "/mnt/efs";
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
